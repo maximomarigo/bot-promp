@@ -5,9 +5,6 @@ const BaileysProvider = require("@bot-whatsapp/provider/baileys");
 const MySQLAdapter = require('@bot-whatsapp/database/mysql');
 
 
-
-
-
 /**
  * Base de Datos
  */
@@ -42,7 +39,7 @@ const { flowOfertas } = require("./flows/flowOfertas");
  * Funcion principal
  */
 const main = async () => {
-  const adapterDB = new MockAdapter();
+  
 
   const adapterFlow = createFlow([
     flowPrincipal,
